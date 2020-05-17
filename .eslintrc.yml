@@ -27,7 +27,8 @@ rules:
   import/extensions: [error, ignorePackages, { "ts": "never", "js": "never" }]
   import/no-unresolved: error
   import/prefer-default-export: off
+  lines-between-class-members: [error, always, { exceptAfterSingleLine: true }]
   no-new: off
+  no-unused-expressions: off
   no-unused-vars: off
   no-useless-constructor: off
-  no-unused-expressions: off
