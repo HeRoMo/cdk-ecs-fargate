@@ -7,6 +7,8 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
+    "eslint": "./node_modules/.bin/eslint . --ext .ts",
+    "clean": "rm -rf ./{bin,lib,test}/{**,}/{*.d.ts,*.js}",
     "test": "jest",
     "cdk": "cdk"
   },
@@ -14,7 +16,14 @@
     "@aws-cdk/assert": "1.39.0",
     "@types/jest": "^25.2.1",
     "@types/node": "10.17.5",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
     "aws-cdk": "1.39.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.13.0",
     "jest": "^26.0.1",
     "ts-jest": "^26.0.0",
     "ts-node": "^8.1.0",
